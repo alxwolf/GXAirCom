@@ -1721,8 +1721,8 @@ void setup() {
   status.bTimeOk = false;
   status.modemstatus = eConnectionState::DISCONNECTED;
   status.bWifiOn = false;
-  command.ConfigGPS = 1;
-  status.gps.bHasGPS = true;
+  command.ConfigGPS = 0;
+  status.gps.bHasGPS = false;
   fanet.setGPS(false);
   status.tRestart = 0;
   sMqttState[0] = 0; //zero-Termination of String !
